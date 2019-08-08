@@ -1,0 +1,149 @@
+.page-footer {
+  background-color: $c-back-main;
+  padding: 56px 8px 40px;
+  position: relative;
+  &__img-container {
+    border-bottom: 1px solid $c-border-in-footer;
+    padding-bottom: 40px;
+    &__img:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+  &__opportunities {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(208px, 1fr));
+    grid-gap: 23px;
+
+    padding: 30px 0 40px;
+    border-bottom: 1px solid $c-border-in-footer;
+  }
+  &__download-links {
+    height: 85px;
+    border-bottom: 1px solid $c-border-in-footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__privacy-inform {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(208px, 1fr));
+    justify-content: space-between;
+    grid-gap: 23px;
+  }
+  &__button-up {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+
+    height: 64px;
+    width: 64px;
+    border-radius: 2px;
+
+    background-color: $c-green;
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 25px;
+    &:hover {
+      background-color: darken($c-green, 5%);
+    }
+  }
+}
+
+.language-form {
+  width: 173px;
+  height: 40px;
+  background-color: $c-language-form;
+  border-radius: 2px;
+  margin-bottom: 33px;
+  padding: 12px 8px;
+  position: relative;
+
+  &__label-before {
+    display: inline-block;
+    background-image: url(../images/world.svg);
+    width: 16px;
+    height: 16px;
+    margin: 0 8px;
+  }
+  &__selection {
+    position: absolute;
+    bottom: 13px;
+    border: none;
+    background-color: $c-language-form;
+    color: $c-white;
+    width: 125px;
+    height: 13px;
+    font-size: 13px;
+    line-height: 16px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__label-after {
+    display: inline-block;
+    background-image: url(../images/Shape-lang.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $c-language-form;
+    z-index: 1;
+    width: 14px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+  }
+
+}
+
+.uber-tag {
+  font-size: 16px;
+  line-height: 19px;
+  &__grate {
+    color: $c-green;
+  }
+}
+
+.media {
+  &__networks {
+    margin-top: 21px;
+  }
+}
+
+.networks {
+  &__facebook:hover,
+  &__twitter:hover,
+  &__instagram:hover {
+    opacity: 0.7;
+  }
+}
+
+.opportunities {
+  &__links-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.basic-link {
+  font-size: 13px;
+  line-height: 15px;
+  color: $c-white;
+  text-decoration: none;
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+  &:hover {
+    color: $c-green;
+  }
+}
+
+.download-links {
+  &__apple {
+    margin-right: 25px;
+  }
+}

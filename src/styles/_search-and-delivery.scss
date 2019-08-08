@@ -1,0 +1,97 @@
+.search-and-delivery {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+
+  &__location-form {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+  }
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $c-border-in-search_input;
+  margin: 40px 0 16px;
+ 
+  &__label {
+    display: inline-block;
+    margin: 0 8px 15px 0;
+    width: 16px;
+    height: 16px;
+
+    background-image: url(../images/path.svg);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+  }
+  &__search-text {
+    border: none;
+    width: 90%;
+    line-height: 24px;
+    margin-bottom: 15px;
+    height: 16px;
+  }
+}
+  
+.when-input {
+  &__label {
+    font-size: 11px;
+    line-height: 13px;
+    color: $c-text;
+    margin-bottom: 8px;
+  }
+  &__input {
+    width: 65px;
+    height: 40px;
+    border-radius: $border-rad;
+
+    color: $c-title;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid $c-border;
+  }
+}
+  
+.to-where-input {
+  &__label {
+    display: block;
+    font-size: 11px;
+    line-height: 13px;
+    color: $c-text;
+    margin-bottom: 8px;
+  }
+  &__input-container {
+    width: 227px;
+    height: 40px;
+    padding: 0 11px;
+    border: 1px solid $c-border;
+    border-radius: $border-rad;
+  }
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+
+  &__symbol {
+    margin-right: 12px;
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+
+    background-image: url(../images/location.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__input {
+    width: 165px;
+    height: 35px;
+    border: none;
+
+    font-size: 13px;
+    color: $c-title;
+  }
+}
