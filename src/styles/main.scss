@@ -27,15 +27,17 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 6px;
   padding-bottom: 20px;
+  transition: transform 0.5s, background-color 1s;
   &__link {
     text-decoration: none;
     &:hover {
       background-color: $c-link_hover;
+      transform: translateY(5px);
     }
   }
 }
 
-.cafe-card {
+.container-item {
   display: flex;
   flex-direction: column;
   margin-bottom: 35px;
@@ -51,7 +53,7 @@ body {
     color: $c-title;
     margin-bottom: 4px;
   }
-  &__details {
+  &__cuisine {
     font-size: 14px;
     line-height: 21px;
     color: $c-text;

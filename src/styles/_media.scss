@@ -4,13 +4,13 @@
       display: none;
     }
   }
-  .header-register {
+  .header {
     &__location-form {
       display: flex;
       justify-content: space-between;
     }
   }
-  .to-where-input {
+  .location-destination-input {
     &__label {
       display: inline;
       margin: 0 7px;
@@ -32,13 +32,13 @@
       margin-left: 25px;
       margin-top: 2px;
     }
-    &__symbol {
+    &__location-symbol {
       position: absolute;
       top: 8px;
       z-index: 0;
     }
   }
-  .when-input {
+  .delivery-time {
     &__input {
       width: 57px;
     }
@@ -54,35 +54,47 @@
 }
 
 @media (min-width: 1024px) {
-  .header-register {
-    padding: 16px 50px;
+  .header {
+    padding: 16px calc((100% - 924px) / 2);
     &__logo-img {
       margin-right: 30px;
     }
   }
   .search-and-delivery {
-    padding: 0 50px;
+    padding: 0 calc((100% - 924px) / 2);
   }
+
   body .main-content {
-    padding: 0 50px;
+    padding: 0 calc((100% - 924px) / 2);
+    max-width: 1000px;
     &__cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
+      justify-content: center;
       grid-gap: 12px;
+    }
+    .container-item {
+      max-width: 350px;
     }
   }
 
-  .to-where-input {
+  .location-destination-input {
     &__label {
       margin: 0 7px;
     }
     &__input-container {
       width: 215px;
-      &__input {
-        width: 150px;
-      }
     }
   }
+  
+  .input-container {
+    &__input {
+      width: 160px;
+    }
+  }
+
   .page-footer {
-    padding: 56px 50px 40px;
+    padding: 56px calc((100% - 924px) / 2) 40px;
     &__opportunities {
       grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
     }

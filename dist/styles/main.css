@@ -6,7 +6,7 @@
   *:focus {
     outline: none; }
 
-.header-register {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,15 +24,15 @@
   position: sticky;
   top: 0;
   z-index: 2; }
-  .header-register__logo-img {
+  .header__logo-img {
     width: 105.44px;
     height: 10.88px;
     margin: 14.56px 0; }
-    .header-register__logo-img:hover {
+    .header__logo-img:hover {
       cursor: pointer;
       -webkit-transform: translateY(3px);
               transform: translateY(3px); }
-  .header-register__location-form {
+  .header__location-form {
     display: none; }
 
 .form-container {
@@ -140,13 +140,13 @@
     margin-bottom: 15px;
     height: 16px; }
 
-.when-input__label {
+.delivery-time__label {
   font-size: 11px;
   line-height: 13px;
   color: #626262;
   margin-bottom: 8px; }
 
-.when-input__input {
+.delivery-time__input {
   width: 65px;
   height: 40px;
   border-radius: 2px;
@@ -156,14 +156,14 @@
   text-align: center;
   border: 1px solid #e0e0e0; }
 
-.to-where-input__label {
+.location-destination-input__label {
   display: block;
   font-size: 11px;
   line-height: 13px;
   color: #626262;
   margin-bottom: 8px; }
 
-.to-where-input__input-container {
+.location-destination-input__input-container {
   width: 227px;
   height: 40px;
   padding: 0 11px;
@@ -177,7 +177,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .input-container__symbol {
+  .input-container__location-symbol {
     margin-right: 12px;
     display: inline-block;
     width: 14px;
@@ -323,17 +323,17 @@
 @media (min-width: 640px) {
   .search-and-delivery__location-form {
     display: none; }
-  .header-register__location-form {
+  .header__location-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .to-where-input__label {
+  .location-destination-input__label {
     display: inline;
     margin: 0 7px; }
-  .to-where-input__input-container {
+  .location-destination-input__input-container {
     width: 155px;
     display: inline-block; }
   .form-container__busket {
@@ -344,11 +344,11 @@
       width: 100px;
       margin-left: 25px;
       margin-top: 2px; }
-    .input-container__symbol {
+    .input-container__location-symbol {
       position: absolute;
       top: 8px;
       z-index: 0; }
-  .when-input__input {
+  .delivery-time__input {
     width: 57px; }
   .page-footer__opportunities {
     grid-gap: 0; }
@@ -356,24 +356,32 @@
     grid-gap: 0; } }
 
 @media (min-width: 1024px) {
-  .header-register {
-    padding: 16px 50px; }
-    .header-register__logo-img {
+  .header {
+    padding: 16px calc((100% - 924px) / 2); }
+    .header__logo-img {
       margin-right: 30px; }
   .search-and-delivery {
-    padding: 0 50px; }
+    padding: 0 calc((100% - 924px) / 2); }
   body .main-content {
-    padding: 0 50px; }
+    padding: 0 calc((100% - 924px) / 2);
+    max-width: 1000px; }
     body .main-content__cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       grid-gap: 12px; }
-  .to-where-input__label {
+    body .main-content .container-item {
+      max-width: 350px; }
+  .location-destination-input__label {
     margin: 0 7px; }
-  .to-where-input__input-container {
+  .location-destination-input__input-container {
     width: 215px; }
-    .to-where-input__input-container__input {
-      width: 150px; }
+  .input-container__input {
+    width: 160px; }
   .page-footer {
-    padding: 56px 50px 40px; }
+    padding: 56px calc((100% - 924px) / 2) 40px; }
     .page-footer__opportunities {
       grid-template-columns: repeat(auto-fill, minmax(305px, 1fr)); }
     .page-footer__privacy-inform {
@@ -398,13 +406,19 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 6px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  -webkit-transition: background-color 1s, -webkit-transform 0.5s;
+  transition: background-color 1s, -webkit-transform 0.5s;
+  transition: transform 0.5s, background-color 1s;
+  transition: transform 0.5s, background-color 1s, -webkit-transform 0.5s; }
   .cards-container__link {
     text-decoration: none; }
     .cards-container__link:hover {
-      background-color: rgba(117, 117, 117, 0.04); }
+      background-color: rgba(117, 117, 117, 0.04);
+      -webkit-transform: translateY(5px);
+              transform: translateY(5px); }
 
-.cafe-card {
+.container-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,21 +427,21 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 35px; }
-  .cafe-card__img {
+  .container-item__img {
     min-width: 300px;
     height: 256px; }
-  .cafe-card__title {
+  .container-item__title {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #1d1d1d;
     margin-bottom: 4px; }
-  .cafe-card__details {
+  .container-item__cuisine {
     font-size: 14px;
     line-height: 21px;
     color: #626262;
     margin-bottom: 4px; }
-  .cafe-card__delivery-time {
+  .container-item__delivery-time {
     font-size: 13px;
     line-height: 21px;
     color: #1d1d1d; }

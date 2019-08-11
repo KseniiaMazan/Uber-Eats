@@ -9,23 +9,23 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <header class="header-register">
+    <header class="header">
       <a href="#">
-        <img class="header-register__logo-img" src="./images/logo.svg" alt="logo" />
+        <img class="header__logo-img" src="./images/logo.svg" alt="Uber Eats logo" />
       </a>
-      <form action="#" class="header-register__location-form location-form">
-          <div class="location-form__when-input when-input">
-            <input type="text" name="when-input" class="when-input__input" placeholder="ASAP" />
+      <form action="#" class="header__location-form location-form">
+          <div class="location-form__delivery-time delivery-time">
+            <input type="text" name="delivery-time" class="delivery-time__input" placeholder="ASAP" />
           </div>
-          <div class="location-form__to-where-input to-where-input">
-            <span class="to-where-input__label">To</span>
-            <div class="to-where-input__input-container input-container">
-              <label for="where-input" class="input-container__symbol"></label>
-              <input type="text" name="to-where-input" id="where-input" class="input-container__input" placeholder="ul. Bolshaya Dmitrovka,22 " />
+          <div class="location-form__location-destination location-destination-input">
+            <span class="location-destination-input__label">To</span>
+            <div class="location-destination-input__input-container input-container">
+              <label for="location-destination" class="input-container__location-symbol"></label>
+              <input type="text" name="location-destination" id="location-destination" class="input-container__input" placeholder="ul. Bolshaya Dmitrovka,22 " />
             </div>
           </div>
         </form>
-      <div class="header-register__form_container form-container">
+      <div class="header__form_container form-container">
         <form action="#" class="form-container__sign-in sign-in">
           <button class="sign-in__button">
             Sign In
@@ -47,15 +47,15 @@
         <input type="text" name="site-search" id="search-text" class="search-input__search-text" placeholder="Search for restaurant or cuisine" />
       </form>
       <form action="" class="search-and-delivery__location-form location-form">
-        <div class="location-form__when-input when-input">
-          <div class="when-input__label">When</div>
-          <input type="text" name="when-input" id="when-input" class="when-input__input" placeholder="ASAP" />
+        <div class="location-form__delivery-time delivery-time">
+          <div class="delivery-time__label">When</div>
+          <input type="text" name="delivery-time" id="delivery-time" class="delivery-time__input" placeholder="ASAP" />
         </div>
-        <div class="location-form__to-where-input to-where-input">
-          <span class="to-where-input__label">To</span>
-          <div class="to-where-input__input-container input-container">
-            <label for="to-where-input" class="input-container__symbol"></label>
-            <input type="text" name="to-where-input" id="to-where-input" class="input-container__input" placeholder="ul. Bolshaya Dmitrovka,22 " />
+        <div class="location-form__location-destination-input location-destination-input">
+          <span class="location-destination-input__label">To</span>
+          <div class="location-destination-input__input-container input-container">
+            <label for="location-destination-input" class="input-container__location-symbol"></label>
+            <input type="text" name="location-destination-input" id="location-destination-input" class="input-container__input" placeholder="ul. Bolshaya Dmitrovka,22 " />
           </div>
         </div>
       </form>
@@ -64,75 +64,75 @@
       <h1 class="main-content__title">Kyiv Restaurants</h1>
       <section class="main-content__cards-container cards-container">
         <a href="#" class="cards-container__link">
-          <section class="cafe-card">
-            <img src="./images/mcdonalds.png" alt="mcdonalds-image" class="cafe-card__img" />
-            <h3 class="cafe-card__title">Макдоналдс</h3>
-            <div class="cafe-card__details">₴₴ • Бургеры</div>
-            <div class="cafe-card__delivery-time">25-35 Min</div>
+          <section class="container-item">
+            <img src="./images/mcdonalds.png" alt="mcdonalds-image" class="container-item__img" />
+            <h2 class="container-item__title">Макдоналдс</h2>
+            <div class="container-item__cuisine">₴₴ • Бургеры</div>
+            <div class="container-item__delivery-time">25-35 Min</div>
           </section>
         </a>
         <a href="#" class="cards-container__link">
-          <section class="cafe-card">
-              <img src="./images/wokwei.png" alt="wokwei-image" class="cafe-card__img" />
-              <h3 class="cafe-card__title">WOKWEI</h3>
-              <div class="cafe-card__details">₴ • Китайська • Азіатська</div>
-              <div class="cafe-card__delivery-time">40 - 50 Min</div>
+          <section class="container-item">
+              <img src="./images/wokwei.png" alt="wokwei-image" class="container-item__img" />
+              <h2 class="container-item__title">WOKWEI</h2>
+              <div class="container-item__cuisine">₴ • Китайська • Азіатська</div>
+              <div class="container-item__delivery-time">40 - 50 Min</div>
           </section>
         </a>
         <a href="#" class="cards-container__link">
-          <section class="cafe-card">
-            <img src="./images/yizha.png" alt="yizha-image" class="cafe-card__img" />
-            <h3 class="cafe-card__title">YIZHA</h3>
-            <div class="cafe-card__details">₴₴ • Американська • Бургери • Вулична їжа</div>
-            <div class="cafe-card__delivery-time">35 - 45 Min</div>
+          <section class="container-item">
+            <img src="./images/yizha.png" alt="yizha-image" class="container-item__img" />
+            <h2 class="container-item__title">YIZHA</h2>
+            <div class="container-item__cuisine">₴₴ • Американська • Бургери • Вулична їжа</div>
+            <div class="container-item__delivery-time">35 - 45 Min</div>
           </section>
         </a>
         <a href="#" class="cards-container__link">
-          <section class="cafe-card">
-            <img src="./images/musafir.png" alt="musafir-image" class="cafe-card__img" />
-            <h3 class="cafe-card__title">Musafir (вул. Саксаганського)</h3>
-            <div class="cafe-card__details">₴₴ • Близькосхідна</div>
-            <div class="cafe-card__delivery-time">30 - 40 Min</div>
+          <section class="container-item">
+            <img src="./images/musafir.png" alt="musafir-image" class="container-item__img" />
+            <h2 class="container-item__title">Musafir (вул. Саксаганського)</h2>
+            <div class="container-item__cuisine">₴₴ • Близькосхідна</div>
+            <div class="container-item__delivery-time">30 - 40 Min</div>
           </section>
         </a>
         <a href="#" class="cards-container__link">
-          <section class="cafe-card">
-            <img src="./images/wokwei2.png" alt="wokwei2-image" class="cafe-card__img" />
-            <h3 class="cafe-card__title">WOKWEI</h3>
-            <div class="cafe-card__details">₴ • Китайська • Азіатська</div>
-            <div class="cafe-card__delivery-time">40 - 50 Min</div>
+          <section class="container-item">
+            <img src="./images/wokwei2.png" alt="wokwei2-image" class="container-item__img" />
+            <h2 class="container-item__title">WOKWEI</h2>
+            <div class="container-item__cuisine">₴ • Китайська • Азіатська</div>
+            <div class="container-item__delivery-time">40 - 50 Min</div>
           </section>
         </a>
         <a href="#" class="cards-container__link">
-          <section class="cafe-card">
-            <img src="./images/milk_bar.png" alt="milk-bar-image" class="cafe-card__img" />
-            <h3 class="cafe-card__title">Milk Bar</h3>
-            <div class="cafe-card__details">₴₴ • Десерти • Європейська</div>
-            <div class="cafe-card__delivery-time">25 - 35 Min</div>
+          <section class="container-item">
+            <img src="./images/milk_bar.png" alt="milk-bar-image" class="container-item__img" />
+            <h2 class="container-item__title">Milk Bar</h2>
+            <div class="container-item__cuisine">₴₴ • Десерти • Європейська</div>
+            <div class="container-item__delivery-time">25 - 35 Min</div>
           </section>
         </a>
         <a href="#" class="cards-container__link">
-          <section class="cafe-card">
-            <img src="./images/mimosa.png" alt="mimosa-brooklyn-image" class="cafe-card__img" />
-            <h3 class="cafe-card__title">Mimosa Brooklyn Pizza</h3>
-            <div class="cafe-card__details">₴₴ • Італійська • Піца • Американська</div>
-            <div class="cafe-card__delivery-time">15 - 25 Min</div>
+          <section class="container-item">
+            <img src="./images/mimosa.png" alt="mimosa-brooklyn-image" class="container-item__img" />
+            <h2 class="container-item__title">Mimosa Brooklyn Pizza</h2>
+            <div class="container-item__cuisine">₴₴ • Італійська • Піца • Американська</div>
+            <div class="container-item__delivery-time">15 - 25 Min</div>
           </section>
         </a>
         <a href="#" class="cards-container__link">
-          <section class="cafe-card">
-            <img src="./images/to-be.png" alt="to-be-image" class="cafe-card__img" />
-            <h3 class="cafe-card__title">To Be</h3>
-            <div class="cafe-card__details">₴₴ • Японська • Азіатська • Суші</div>
-            <div class="cafe-card__delivery-time">25 - 35 Min</div>
+          <section class="container-item">
+            <img src="./images/to-be.png" alt="to-be-image" class="container-item__img" />
+            <h2 class="container-item__title">To Be</h2>
+            <div class="container-item__cuisine">₴₴ • Японська • Азіатська • Суші</div>
+            <div class="container-item__delivery-time">25 - 35 Min</div>
           </section>
         </a>
         <a href="#" class="cards-container__link">
-          <section class="cafe-card">
-            <img src="./images/druzi-cafe.png" alt="druzi-cafe-image" class="cafe-card__img" />
-            <h3 class="cafe-card__title">Druzi Cafe (вул. Прорізна)</h3>
-            <div class="cafe-card__details">₴₴ • Американська • Сучасна європейська • У...</div>
-            <div class="cafe-card__delivery-time">30 - 40 Min</div>
+          <section class="container-item">
+            <img src="./images/druzi-cafe.png" alt="druzi-cafe-image" class="container-item__img" />
+            <h2 class="container-item__title">Druzi Cafe (вул. Прорізна)</h2>
+            <div class="container-item__cuisine">₴₴ • Американська • Сучасна європейська • У...</div>
+            <div class="container-item__delivery-time">30 - 40 Min</div>
           </section>
         </a>
       </section>
