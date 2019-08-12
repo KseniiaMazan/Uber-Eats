@@ -1,0 +1,113 @@
+.search-and-delivery {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+
+  &__location-form {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+  }
+}
+
+.search-input {
+  margin: 40px 0 16px;
+  position: relative;
+ 
+  &__search-label {
+    display: block;
+    margin: 0 8px 15px 0;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+
+    background-image: url(../images/Path.svg);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+  }
+  &__search-text {
+    border: none;
+    width: 100%;
+    line-height: 24px;
+    height: 33px;
+    border-bottom: 1px solid $c-border-in-search_input;
+    padding: 0 0 15px 30px;
+
+    transition: 0.3s;
+    &:focus {
+      border-color: $c-green;
+    }
+  }
+}
+
+.delivery-time {
+  transition: 1s;
+  &__label {
+    font-size: 11px;
+    line-height: 13px;
+    color: $c-text;
+    margin-bottom: 8px;
+  }
+  &__input {
+    width: 65px;
+    height: 40px;
+    border-radius: $border-rad;
+
+    color: $c-title;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid $c-border;
+    &:focus {
+      animation: input_border 0.8s linear;
+      border: 1px solid $c-green;
+    }
+  }
+}
+  
+.location-destination-input {
+  &__label {
+    display: block;
+    font-size: 11px;
+    line-height: 13px;
+    color: $c-text;
+    margin-bottom: 8px;
+  }
+  &__input-container {
+    height: 40px;
+  }
+}
+
+.input-container {
+  position: relative;
+
+  &__location-symbol {
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+
+    background-image: url(../images/location.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__input {
+    width: 210px;
+    height: 40px;
+    padding: 8px 0 8px 32px;
+    border: 1px solid $c-border;
+    border-radius: $border-rad;
+
+    font-size: 13px;
+    color: $c-title;
+    transition: 1s;
+    &:focus {
+      animation: input_border 0.8s linear;
+      border-color: $c-green;
+    }
+  }
+}

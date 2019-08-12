@@ -2,12 +2,172 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <a href="#to-top" class="button-up"></a>
+    <header class="header">
+      <a href="#">
+        <img class="header__logo-img" src="./images/logo.svg" alt="Uber Eats logo" />
+      </a>
+      <form action="#" class="header__location-form location-form">
+          <div class="location-form__delivery-time delivery-time">
+            <input type="text" name="delivery-time" class="delivery-time__input" placeholder="ASAP" />
+          </div>
+          <div class="location-form__location-destination location-destination-input">
+            <span class="location-destination-input__label">To</span>
+            <div class="location-destination-input__input-container input-container">
+              <label for="location-destination" class="input-container__location-symbol"></label>
+              <input type="text" name="location-destination" id="location-destination" class="input-container__input" placeholder="ul. Bolshaya Dmitrovka,22 " />
+            </div>
+          </div>
+        </form>
+      <div class="header__form_container form-container">
+        <form action="#" class="form-container__sign-in sign-in">
+          <button class="sign-in__button">
+            Sign In
+          </button>
+        </form>
+        <form action="#" class="form-container__register register">
+          <button class="register__button">
+            Register
+          </button>
+        </form>
+        <form action="#" class="form-container__busket busket">
+            <button class="busket__button"></button>
+        </form>
+      </div>
+    </header>
+    <section class="search-and-delivery" id="to-top">
+      <form action="" class="search-and-delivery__search-input search-input">
+        <label for="search-text" class="search-input__search-label"></label>
+        <input type="text" name="site-search" id="search-text" class="search-input__search-text" placeholder="Search for restaurant or cuisine" />
+      </form>
+      <form action="" class="search-and-delivery__location-form location-form">
+        <div class="location-form__delivery-time delivery-time">
+          <div class="delivery-time__label">When</div>
+          <input type="text" name="delivery-time" id="delivery-time" class="delivery-time__input" placeholder="ASAP" />
+        </div>
+        <div class="location-form__location-destination-input location-destination-input">
+          <span class="location-destination-input__label">To</span>
+          <div class="location-destination-input__input-container input-container">
+            <label for="location-destination-input" class="input-container__location-symbol"></label>
+            <input type="text" name="location-destination-input" id="location-destination-input" class="input-container__input" placeholder="ul. Bolshaya Dmitrovka,22 " />
+          </div>
+        </div>
+      </form>
+    </section>
+    <main class="main-content">
+      <h1 class="main-content__title">Kyiv Restaurants</h1>
+      <section class="main-content__cards-container cards-container">
+        <section class="container-item">
+          <img src="./images/mcdonalds.png" alt="mcdonalds-image" class="container-item__img" />
+          <h2 class="container-item__title">Макдоналдс</h2>
+          <div class="container-item__cuisine">₴₴ • Бургеры</div>
+          <div class="container-item__delivery-time">25-35 Min</div>
+        </section>
+        <section class="container-item">
+            <img src="./images/wokwei.png" alt="wokwei-image" class="container-item__img" />
+            <h2 class="container-item__title">WOKWEI</h2>
+            <div class="container-item__cuisine">₴ • Китайська • Азіатська</div>
+            <div class="container-item__delivery-time">40 - 50 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/yizha.png" alt="yizha-image" class="container-item__img" />
+          <h2 class="container-item__title">YIZHA</h2>
+          <div class="container-item__cuisine">₴₴ • Американська • Бургери • Вулична їжа</div>
+          <div class="container-item__delivery-time">35 - 45 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/musafir.png" alt="musafir-image" class="container-item__img" />
+          <h2 class="container-item__title">Musafir (вул. Саксаганського)</h2>
+          <div class="container-item__cuisine">₴₴ • Близькосхідна</div>
+          <div class="container-item__delivery-time">30 - 40 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/wokwei2.png" alt="wokwei2-image" class="container-item__img" />
+          <h2 class="container-item__title">WOKWEI</h2>
+          <div class="container-item__cuisine">₴ • Китайська • Азіатська</div>
+          <div class="container-item__delivery-time">40 - 50 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/milk_bar.png" alt="milk-bar-image" class="container-item__img" />
+          <h2 class="container-item__title">Milk Bar</h2>
+          <div class="container-item__cuisine">₴₴ • Десерти • Європейська</div>
+          <div class="container-item__delivery-time">25 - 35 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/mimosa.png" alt="mimosa-brooklyn-image" class="container-item__img" />
+          <h2 class="container-item__title">Mimosa Brooklyn Pizza</h2>
+          <div class="container-item__cuisine">₴₴ • Італійська • Піца • Американська</div>
+          <div class="container-item__delivery-time">15 - 25 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/to-be.png" alt="to-be-image" class="container-item__img" />
+          <h2 class="container-item__title">To Be</h2>
+          <div class="container-item__cuisine">₴₴ • Японська • Азіатська • Суші</div>
+          <div class="container-item__delivery-time">25 - 35 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/druzi-cafe.png" alt="druzi-cafe-image" class="container-item__img" />
+          <h2 class="container-item__title">Druzi Cafe (вул. Прорізна)</h2>
+          <div class="container-item__cuisine">₴₴ • Американська • Сучасна європейська • У...</div>
+          <div class="container-item__delivery-time">30 - 40 Min</div>
+        </section>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__img-container">
+        <a href="#">
+          <img src="./images/white-logo.svg" alt="logo" class="page-footer__img-container__img" />
+        </a>
+      </div>
+      <section class="page-footer__opportunities opportunities">
+        <div class="opportunities__media media">
+          <form class="opportunities__language-form language-form">
+            <label for="language-form-fieldset" class="language-form__label-before"></label>
+            <select id="language-form-fieldset" class="language-form__selection selection">
+              <option value="en" class="selection__option">ENGLISH</option>
+            </select>
+            <label for="language-form-fieldset" class="language-form__label-after"></label>
+          </form>
+          <a href="#" class="uber-tag basic-link"><span class="uber-tag__grate">#</span>UberEats</a>
+          <div class="media__networks networks">
+            <a href="#" class="networks__facebook"><img src="./images/facebook.svg" alt="facebook"></a>
+            <a href="#" class="networks__twitter"><img src="./images/twitter.svg" alt="twitter"></a>
+            <a href="#" class="networks__instagram"><img src="./images/instagram.svg" alt="instagram"></a>
+          </div>
+        </div>
+        <div class="opportunities__links-container">
+          <a href="#" class="opportunities__link basic-link">About UberEats</a>
+          <a href="#" class="opportunities__link basic-link">Become a Delivery Partner</a>
+          <a href="#" class="opportunities__link basic-link">Become a Restaurant Partner</a>
+        </div>
+        <div class="opportunities__links-container">
+          <a href="#" class="opportunities__link basic-link">See all cities</a>
+          <a href="#" class="opportunities__link basic-link">Pricing</a>
+          <a href="#" class="opportunities__link basic-link">Help</a>
+          <a href="#" class="opportunities__link basic-link">FAQs</a>
+        </div>
+      </section>
+      <div class="page-footer__download-links download-links">
+        <a href="#" class="download-links__apple">
+          <img src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Apple store link" class="">
+        </a>
+        <a href="#" class="download-links__google">
+          <img src="./images/en_badge_web_generic-cf6dad406f.svg" alt="Google Play link">
+        </a>
+      </div>
+      <div class="page-footer__privacy-inform">
+        <a href="#" class="privacy-inform__link basic-link">© 2017 Uber Technologies Inc.</a>
+        <a href="#" class="privacy-inform__link basic-link">Privacy</a>
+        <a href="#" class="privacy-inform__link basic-link">Terms</a>
+      </div>
+      <!-- <a href="#to-top" class="page-footer__button-up"></a> -->
+    </footer>
   </body>
 </html>
