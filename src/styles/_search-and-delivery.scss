@@ -35,11 +35,9 @@
     border-bottom: 1px solid $c-border-in-search_input;
     padding: 0 0 15px 30px;
 
-    transition: 1s;
+    transition: 0.3s;
     &:focus {
-      animation: search_text_underline 0.7s ease-in-out;
       border-color: $c-green;
-      width: 100%;
     }
   }
 }

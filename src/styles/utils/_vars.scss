@@ -10,35 +10,3 @@ $c-border-in-footer: rgb(125, 125, 125);
 $c-language-form: #3b3b3b;
 
 $border-rad: 2px;
-
-@keyframes search_text_underline {
-  0% {
-    border-bottom: 1px solid $c-white;
-  }
-  1% {
-    border-bottom: 1px solid $c-green;
-    width: 0%;
-  }
-  100% {
-    border-bottom: 1px solid $c-green;
-    width: 100%;
-  }
-}
-
-@keyframes input_border {
-  0% {
-    border: 1px solid $c-white;
-  }
-  25% {
-    border-top: 1px solid $c-green;
-  }
-  50% {
-    border-right: 1px solid $c-green;
-  }
-  75% {
-    border-bottom: 1px solid $c-green;
-  }
-  100% {
-    border: 1px solid $c-green;
-  }
-}
