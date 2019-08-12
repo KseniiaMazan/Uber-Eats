@@ -33,25 +33,6 @@
     justify-content: space-between;
     grid-gap: 23px;
   }
-  &__button-up {
-    display: block;
-    position: absolute;
-    bottom: 25px;
-    right: 15px;
-
-    height: 64px;
-    width: 64px;
-    border-radius: 2px;
-
-    background-color: $c-green;
-    background-image: url(../images/arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 15px 25px;
-    &:hover {
-      background-color: darken($c-green, 5%);
-    }
-  }
 }
 
 .language-form {

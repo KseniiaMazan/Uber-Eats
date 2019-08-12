@@ -7,12 +7,36 @@
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.button-up {
+  display: block;
+  position: fixed;
+  z-index: 2;
+  bottom: 25px;
+  right: 15px;
+
+  height: 64px;
+  width: 64px;
+  border-radius: 2px;
+
+  background-color: $c-green;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 25px;
+  &:hover {
+    background-color: darken($c-green, 5%);
+  }
 }
 
 .main-content {
   display: grid;
   grid-template-rows: auto auto;
   padding: 0 5px;
+  position: relative;
   &__title {
     font-size: 22px;
     line-height: 34px;
@@ -28,13 +52,6 @@ body {
   grid-gap: 6px;
   padding-bottom: 20px;
   transition: transform 0.5s, background-color 1s;
-  &__link {
-    text-decoration: none;
-    &:hover {
-      background-color: $c-link_hover;
-      transform: translateY(5px);
-    }
-  }
 }
 
 .container-item {
@@ -42,8 +59,13 @@ body {
   flex-direction: column;
   margin-bottom: 35px;
 
+  &:hover {
+    background-color: $c-link_hover;
+    transform: translateY(5px);
+    cursor: pointer;
+  }
   &__img {
-    min-width: 300px;
+    min-width: 290px;
     height: 256px;
   }
   &__title {

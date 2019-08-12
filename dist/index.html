@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
+    <a href="#to-top" class="button-up"></a>
     <header class="header">
       <a href="#">
         <img class="header__logo-img" src="./images/logo.svg" alt="Uber Eats logo" />
@@ -43,7 +44,7 @@
     </header>
     <section class="search-and-delivery" id="to-top">
       <form action="" class="search-and-delivery__search-input search-input">
-        <label for="search-text" class="search-input__label"></label>
+        <label for="search-text" class="search-input__search-label"></label>
         <input type="text" name="site-search" id="search-text" class="search-input__search-text" placeholder="Search for restaurant or cuisine" />
       </form>
       <form action="" class="search-and-delivery__location-form location-form">
@@ -63,78 +64,60 @@
     <main class="main-content">
       <h1 class="main-content__title">Kyiv Restaurants</h1>
       <section class="main-content__cards-container cards-container">
-        <a href="#" class="cards-container__link">
-          <section class="container-item">
-            <img src="./images/mcdonalds.png" alt="mcdonalds-image" class="container-item__img" />
-            <h2 class="container-item__title">Макдоналдс</h2>
-            <div class="container-item__cuisine">₴₴ • Бургеры</div>
-            <div class="container-item__delivery-time">25-35 Min</div>
-          </section>
-        </a>
-        <a href="#" class="cards-container__link">
-          <section class="container-item">
-              <img src="./images/wokwei.png" alt="wokwei-image" class="container-item__img" />
-              <h2 class="container-item__title">WOKWEI</h2>
-              <div class="container-item__cuisine">₴ • Китайська • Азіатська</div>
-              <div class="container-item__delivery-time">40 - 50 Min</div>
-          </section>
-        </a>
-        <a href="#" class="cards-container__link">
-          <section class="container-item">
-            <img src="./images/yizha.png" alt="yizha-image" class="container-item__img" />
-            <h2 class="container-item__title">YIZHA</h2>
-            <div class="container-item__cuisine">₴₴ • Американська • Бургери • Вулична їжа</div>
-            <div class="container-item__delivery-time">35 - 45 Min</div>
-          </section>
-        </a>
-        <a href="#" class="cards-container__link">
-          <section class="container-item">
-            <img src="./images/musafir.png" alt="musafir-image" class="container-item__img" />
-            <h2 class="container-item__title">Musafir (вул. Саксаганського)</h2>
-            <div class="container-item__cuisine">₴₴ • Близькосхідна</div>
-            <div class="container-item__delivery-time">30 - 40 Min</div>
-          </section>
-        </a>
-        <a href="#" class="cards-container__link">
-          <section class="container-item">
-            <img src="./images/wokwei2.png" alt="wokwei2-image" class="container-item__img" />
+        <section class="container-item">
+          <img src="./images/mcdonalds.png" alt="mcdonalds-image" class="container-item__img" />
+          <h2 class="container-item__title">Макдоналдс</h2>
+          <div class="container-item__cuisine">₴₴ • Бургеры</div>
+          <div class="container-item__delivery-time">25-35 Min</div>
+        </section>
+        <section class="container-item">
+            <img src="./images/wokwei.png" alt="wokwei-image" class="container-item__img" />
             <h2 class="container-item__title">WOKWEI</h2>
             <div class="container-item__cuisine">₴ • Китайська • Азіатська</div>
             <div class="container-item__delivery-time">40 - 50 Min</div>
-          </section>
-        </a>
-        <a href="#" class="cards-container__link">
-          <section class="container-item">
-            <img src="./images/milk_bar.png" alt="milk-bar-image" class="container-item__img" />
-            <h2 class="container-item__title">Milk Bar</h2>
-            <div class="container-item__cuisine">₴₴ • Десерти • Європейська</div>
-            <div class="container-item__delivery-time">25 - 35 Min</div>
-          </section>
-        </a>
-        <a href="#" class="cards-container__link">
-          <section class="container-item">
-            <img src="./images/mimosa.png" alt="mimosa-brooklyn-image" class="container-item__img" />
-            <h2 class="container-item__title">Mimosa Brooklyn Pizza</h2>
-            <div class="container-item__cuisine">₴₴ • Італійська • Піца • Американська</div>
-            <div class="container-item__delivery-time">15 - 25 Min</div>
-          </section>
-        </a>
-        <a href="#" class="cards-container__link">
-          <section class="container-item">
-            <img src="./images/to-be.png" alt="to-be-image" class="container-item__img" />
-            <h2 class="container-item__title">To Be</h2>
-            <div class="container-item__cuisine">₴₴ • Японська • Азіатська • Суші</div>
-            <div class="container-item__delivery-time">25 - 35 Min</div>
-          </section>
-        </a>
-        <a href="#" class="cards-container__link">
-          <section class="container-item">
-            <img src="./images/druzi-cafe.png" alt="druzi-cafe-image" class="container-item__img" />
-            <h2 class="container-item__title">Druzi Cafe (вул. Прорізна)</h2>
-            <div class="container-item__cuisine">₴₴ • Американська • Сучасна європейська • У...</div>
-            <div class="container-item__delivery-time">30 - 40 Min</div>
-          </section>
-        </a>
+        </section>
+        <section class="container-item">
+          <img src="./images/yizha.png" alt="yizha-image" class="container-item__img" />
+          <h2 class="container-item__title">YIZHA</h2>
+          <div class="container-item__cuisine">₴₴ • Американська • Бургери • Вулична їжа</div>
+          <div class="container-item__delivery-time">35 - 45 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/musafir.png" alt="musafir-image" class="container-item__img" />
+          <h2 class="container-item__title">Musafir (вул. Саксаганського)</h2>
+          <div class="container-item__cuisine">₴₴ • Близькосхідна</div>
+          <div class="container-item__delivery-time">30 - 40 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/wokwei2.png" alt="wokwei2-image" class="container-item__img" />
+          <h2 class="container-item__title">WOKWEI</h2>
+          <div class="container-item__cuisine">₴ • Китайська • Азіатська</div>
+          <div class="container-item__delivery-time">40 - 50 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/milk_bar.png" alt="milk-bar-image" class="container-item__img" />
+          <h2 class="container-item__title">Milk Bar</h2>
+          <div class="container-item__cuisine">₴₴ • Десерти • Європейська</div>
+          <div class="container-item__delivery-time">25 - 35 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/mimosa.png" alt="mimosa-brooklyn-image" class="container-item__img" />
+          <h2 class="container-item__title">Mimosa Brooklyn Pizza</h2>
+          <div class="container-item__cuisine">₴₴ • Італійська • Піца • Американська</div>
+          <div class="container-item__delivery-time">15 - 25 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/to-be.png" alt="to-be-image" class="container-item__img" />
+          <h2 class="container-item__title">To Be</h2>
+          <div class="container-item__cuisine">₴₴ • Японська • Азіатська • Суші</div>
+          <div class="container-item__delivery-time">25 - 35 Min</div>
+        </section>
+        <section class="container-item">
+          <img src="./images/druzi-cafe.png" alt="druzi-cafe-image" class="container-item__img" />
+          <h2 class="container-item__title">Druzi Cafe (вул. Прорізна)</h2>
+          <div class="container-item__cuisine">₴₴ • Американська • Сучасна європейська • У...</div>
+          <div class="container-item__delivery-time">30 - 40 Min</div>
+        </section>
       </section>
     </main>
     <footer class="page-footer">
@@ -184,7 +167,7 @@
         <a href="#" class="privacy-inform__link basic-link">Privacy</a>
         <a href="#" class="privacy-inform__link basic-link">Terms</a>
       </div>
-      <a href="#to-top" class="page-footer__button-up"></a>
+      <!-- <a href="#to-top" class="page-footer__button-up"></a> -->
     </footer>
   </body>
 </html>

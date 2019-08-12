@@ -16,7 +16,6 @@
       margin: 0 7px;
     }
     &__input-container {
-      width: 155px;
       display: inline-block;
     }
   }
@@ -28,14 +27,11 @@
   .input-container {
     position: relative;
     &__input {
-      width: 100px;
-      margin-left: 25px;
-      margin-top: 2px;
+      width: 190px;
     }
     &__location-symbol {
       position: absolute;
-      top: 8px;
-      z-index: 0;
+      top: 10px;
     }
   }
   .delivery-time {
@@ -82,14 +78,11 @@
     &__label {
       margin: 0 7px;
     }
-    &__input-container {
-      width: 215px;
-    }
   }
   
   .input-container {
     &__input {
-      width: 160px;
+      width: 215px;
     }
   }
 
